@@ -1,6 +1,6 @@
 package week05;
 
-import java.util.List;
+
 
 public class Application {
 	
@@ -9,15 +9,15 @@ public class Application {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		Logger logger = new FileLogger();
+		Logger logger = new ConsoleLogger();
 		
-		logger.info("HellO");
+		logger.info("Hello");
 		logger.warning("This is a warning");
 		logger.error("Oops, this is an error!");
 		logger.fatal("Fatal Error");
 		logger.close();
 		
-		setLogger(new FileLogger());
+		/* setLogger(new FileLogger()); */
 		setLogger(new ConsoleLogger());
 
 	}
